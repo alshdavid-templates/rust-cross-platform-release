@@ -1,0 +1,11 @@
+[package]
+name = "cross-platform-release"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+strip = true
+panic = "abort"
+
+[dependencies]
+current_platform = "0.2.0"
